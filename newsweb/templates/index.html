@@ -37,7 +37,6 @@
     $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
     setTimeout(function(){
       $.getJSON($SCRIPT_ROOT+'/update');
-      console.log("DB Updated")
     }, 3000);
     $('.commonclass').hide();
 
