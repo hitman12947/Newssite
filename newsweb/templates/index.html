@@ -35,7 +35,7 @@
 {% block script %}
   <script type="text/javascript">
     $SCRIPT_ROOT = {{ request.script_root|tojson|safe }};
-    setTimeout(function(){
+    setInterval(function(){
       $.getJSON($SCRIPT_ROOT+'/update');
     }, 3000);
     $('.commonclass').hide();
